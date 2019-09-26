@@ -1,0 +1,40 @@
+{
+  "name": "uplus_instructions",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@uplus/uplus-api": "^3.0.0-beta",
+    "antd-mobile": "^2.2.14",
+    "babel-plugin-import": "^1.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "cross-env": "^5.2.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "cross-env GENERATE_SOURCEMAP=false react-app-rewired build && cd ./build && pktool -k uplusNew",
+    "test": "react-app-rewired test --env=jsdom"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-app-rewired": "^2.0.2-next.0",
+    "@uplus/packagetool": "0.0.4",
+    "cross-env": "^5.2.0"
+  }
+}
